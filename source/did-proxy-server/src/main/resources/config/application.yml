@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: Proxy
+  profiles:
+    default: dev
+    group:
+      dev:
+        - logging
+        - spring-docs
+
+server:
+  port: 8097
+
+issuer:
+#  url: http://10.48.17.124:8084
+  url: http://192.168.3.130:8091
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "health"
+          - "shutdown"
+  endpoint:
+    health:
+      show-details: "never"
+    shutdown:
+      enabled: true
+

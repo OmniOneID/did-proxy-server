@@ -1,0 +1,4 @@
+logging:
+  level:
+    org.omnione: debug
+    org.omnione.did.proxy.v1.api.IssuerFeign: DEBUG
