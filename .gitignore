@@ -1,0 +1,3 @@
+# Local Gradle caches and build outputs
+source/did-proxy-server/.gradle/
+source/did-proxy-server/build/
